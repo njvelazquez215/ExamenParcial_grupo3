@@ -4,7 +4,7 @@ name: Deploy to Production
 # Trigger: Correr solo en 'push' (merge) a 'production'
 on:
   push:
-    branches: [ production ]
+    branches: [ main ]
 
 jobs:
   deploy-to-render:
