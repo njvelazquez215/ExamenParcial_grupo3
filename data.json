@@ -1,0 +1,17 @@
+{
+    "pago-001": {
+        "amount": 1500.0,
+        "payment_method": "PayPal",
+        "status": "REGISTRADO"
+    },
+    "pago-paypal-ok": {
+        "amount": 4000.0,
+        "payment_method": "PayPal",
+        "status": "PAGADO"
+    },
+    "pago-paypal-mal": {
+        "amount": 6000.0,
+        "payment_method": "PayPal",
+        "status": "REGISTRADO"
+    }
+}
