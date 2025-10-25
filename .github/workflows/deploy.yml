@@ -1,0 +1,16 @@
+# Nombre del workflow
+name: Deploy to Production
+
+# Trigger: Correr solo en 'push' (merge) a 'production'
+on:
+  push:
+    branches: [ production ]
+
+jobs:
+  deploy-to-render:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Llamamos al Deploy Hook de Render usando el secreto
+      - name: Trigger Render Deploy
+        run: curl "${{ secrets.RENDER_DEPLOY_HOOK_URL }}"
